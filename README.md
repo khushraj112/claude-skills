@@ -4,7 +4,7 @@ My personal Claude Code skills repository. Skills here are reusable across proje
 
 ## Skills
 
-- **`daily-slack-update`** — converts raw Claude Code / AI-agent work logs into a concise, humanised Slack daily update. Extracts what was actually accomplished, drops commits, branches, file paths and tool noise, and formats it for stand-up.
+- **`daily-slack-update`** — turns raw Claude Code / AI-agent work logs into two outputs: a detailed **Notion** work record (the source of record, with full context, testing and outcomes) and a condensed **Slack** stand-up update derived from it. Extracts what was actually accomplished and drops commits, branches, file paths and tool noise.
 
 More skills will be added over time.
 
