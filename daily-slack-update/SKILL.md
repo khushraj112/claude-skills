@@ -1,6 +1,6 @@
 ---
 name: daily-slack-update
-description: Turn raw Claude Code / AI coding-agent work logs into two outputs — a detailed Notion work record and a condensed Slack stand-up update. Notion is the source of record with full context, testing and outcomes; Slack is a short summary derived from it. Extracts what was actually accomplished and drops commits, branches, file paths and tool noise. Use when asked for a daily update, stand-up summary, Notion work log, Slack update, or "what did I get done today" from agent output, session transcripts, or a work log.
+description: Turn raw Claude Code / AI coding-agent work logs into two outputs — a detailed Notion work record and a condensed Slack stand-up update. Notion is the source of record with full context, testing and outcomes; Slack is a short summary derived from it. Extracts what was actually accomplished and drops commits, branches, file paths and tool noise. Use whenever the user pastes their work, tasks, or agent output and asks to make it Slack ready, Notion ready, Slack and Notion ready, stand-up ready, or update ready — including phrasings like "this is my task, make it Slack ready", "make this Notion ready", "daily update", "stand-up summary", "Notion work log", "Slack update", or "what did I get done today".
 ---
 
 # Daily Work → Notion + Slack
@@ -28,6 +28,12 @@ This is not a Slack formatter. It is a daily work system with two outputs at two
 ```
 
 Run the three stages in order. Never skip Stage 2 and write Slack directly from the raw log — Slack is derived from the Notion record, not from the noise.
+
+## Which output to return
+
+By default, return both.
+
+If the user asks for only one — "make it Slack ready", "just the Notion version" — return only that one. But still do the thinking for both internally: the Slack version is always written down from a detailed extraction, never straight off the raw log. Asking for Slack alone changes what is shown, not how it is derived.
 
 ## Stage 1 — Extract real work
 
