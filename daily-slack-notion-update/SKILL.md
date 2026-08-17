@@ -1,5 +1,5 @@
 ---
-name: daily-slack-update
+name: daily-slack-notion-update
 description: Turn raw Claude Code / AI coding-agent work logs into two outputs — a detailed Notion work record and a condensed Slack stand-up update. Notion is the source of record with full context, testing and outcomes; Slack is a short summary derived from it. Extracts what was actually accomplished and drops commits, branches, file paths and tool noise. Use whenever the user pastes their work, tasks, or agent output and asks to make it Slack ready, Notion ready, Slack and Notion ready, stand-up ready, or update ready — including phrasings like "this is my task, make it Slack ready", "make this Notion ready", "daily update", "stand-up summary", "Notion work log", "Slack update", or "what did I get done today".
 ---
 
